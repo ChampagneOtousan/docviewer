@@ -1,0 +1,46 @@
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+section {
+  height: 800px;
+  width: 60%;
+}
+
+body section:nth-child(odd) {
+  display: grid;
+  grid-template: 200px / 300px 300px;
+}
+
+body section:nth-child(2) div {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background: black;
+}
+
+div, p, h2, h6 {
+  animation: fadeIn 0.8s;
+}
+
+body section:nth-child(2) p {
+  color: gray;
+  text-align: center;
+}
+
+section > h2 {
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
