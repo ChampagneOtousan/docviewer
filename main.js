@@ -8,7 +8,8 @@ for (div of divs) {
 }
 
 window.addEventListener("scroll", function(event) {
-  console.log("event")
+  console.log(window.scrollY)
+  if (window.scrollY > 500)
 })
 
 console.log(sections)
